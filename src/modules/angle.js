@@ -4,7 +4,7 @@
 
 import getProjection from './getProjection'
 
-importClass(Packages.com.sk89q.worldedit.Vector2D)
+importClass(Packages.com.boydti.fawe.math.Vector32D)
 
 const projection = getProjection()
 

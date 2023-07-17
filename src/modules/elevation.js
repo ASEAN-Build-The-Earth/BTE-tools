@@ -3,7 +3,7 @@ import getProjection from './getProjection'
 import { getConfig } from './readFile'
 import xmlToJson from './xmlToJson'
 
-importClass(Packages.com.sk89q.worldedit.Vector)
+importClass(Packages.com.boydti.fawe.math.Vector3)
 
 importClass(Packages.com.sk89q.worldedit.WorldEdit)
 importClass(Packages.com.sk89q.worldedit.command.RegionCommands)

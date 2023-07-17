@@ -3,7 +3,7 @@ import { elevation } from './modules/elevation'
 import { ignoredBlocks } from './modules/blocks'
 import { transformIDs } from './modules/utils'
 
-importClass(Packages.com.sk89q.worldedit.Vector)
+importClass(Packages.com.boydti.fawe.math.Vector3)
 
 importClass(Packages.com.sk89q.worldedit.WorldEdit)
 importClass(Packages.com.sk89q.worldedit.command.RegionCommands)

@@ -1,6 +1,6 @@
 /* global Vector */
 
-importClass(Packages.com.sk89q.worldedit.Vector)
+importClass(Packages.com.boydti.fawe.math.Vector3)
 
 const vectorUp = Vector.UNIT_Y
 const vectorDown = Vector.UNIT_Y.multiply(-1)

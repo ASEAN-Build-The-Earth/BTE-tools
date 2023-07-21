@@ -1,0 +1,34 @@
+name: Node CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    name: Build on node 12 and Windows
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup Node.js 12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+    
+    - name: Installing
+      run: yarn install
+      env:
+        CI: true
+    
+    - name: Linting
+      run: yarn lint
+
+    - name: Building
+      run: yarn build
+      env:
+        IGN_API_KEY: ${{ secrets.IGN_API_KEY }}
+
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: craftscripts
+        path: craftscripts
